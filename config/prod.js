@@ -1,9 +1,9 @@
 'use strict';
 
 var config = {
-    env: 'dev',
+    env: 'prod',
     port: 3000,
-    debug: true,
+    debug: false,
   
     es_region : 'us-west-1',
     es_domain : 'prod******.us-west-1.es.amazonaws.com',
