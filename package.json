@@ -1,0 +1,21 @@
+{
+  "name": "AWS-ES-Demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start":"export NODE_ENV=prod&&node app.js",
+    "test":"export NODE_ENV=dev&&node app.js",
+    "dev":"export NODE_ENV=dev&&node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk":"2.474.0",
+    "joi": "13.0.1",
+    "koa": "2.4.1",
+    "koa-joi-validate": "0.5.1",
+    "koa-router": "7.2.1"
+  }
+}
