@@ -1,0 +1,13 @@
+version: '3'
+
+services: 
+    api: # Node.js App
+        container_name: complete-api
+        build: .
+        ports:
+          - "3000:3000" # Expose API port
+          - "9229:9229" # Expose Node process debug port (disable in production)
+        environment: # Set ENV vars
+          - NODE_ENV=local
+          - ES_HOST=elasticsearch
+          - PORT=3000
